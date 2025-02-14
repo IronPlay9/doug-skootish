@@ -1,1 +1,30 @@
-<h1>Hello World!</h1>
+<p>The contract between DougDoug and Skootish is...</p>
+<h1 style="color:green">IN EFFECT</h1>
+<p>This contract was signed on 22nd of Septermber 2024.</p>
+<p>It has been</p>
+<h2 id="daysSince"></h2>
+<p>since Skootish was hired.</p>
+<p>That means that DougDoug has paid Skootish</p>
+<h1 id="moneyEarned"></h1>
+<p>(if he pays him, of course)(we hate dougdoug)(we love ougdoug)</p>
+
+<script>
+        // The specific date (format: YYYY-MM-DD)
+        const specificDate = new Date("2024-09-22");
+
+        // Get the current date
+        const currentDate = new Date();
+
+        // Calculate the difference in milliseconds
+        const timeDifference = currentDate - specificDate;
+
+        // Convert milliseconds to days (1000 ms * 60 sec * 60 min * 24 hours)
+        const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+        // Display the result in the HTML element
+        document.getElementById("daysSince").textContent = "${daysDifference}";
+
+        const moneyTimesDays = 5 * daysDifference
+  
+        document.getElementById("moneyEarned").textContent = "${moneyTimesDays}$"
+</script>
