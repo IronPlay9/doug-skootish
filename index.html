@@ -22,9 +22,9 @@
         const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
         // Display the result in the HTML element
-        document.getElementById("daysSince").textContent = "${daysDifference}";
+        document.getElementById("daysSince").textContent = daysDifference;
 
         const moneyTimesDays = 5 * daysDifference
   
-        document.getElementById("moneyEarned").textContent = "${moneyTimesDays}$"
+        document.getElementById("moneyEarned").textContent = moneyTimesDays + ""
 </script>
